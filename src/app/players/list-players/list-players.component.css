@@ -1,0 +1,99 @@
+@import "~nouislider/distribute/nouislider.min.css";
+.toggle-label {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 36px;
+  margin-top: 8px;
+  border: 1px solid #808080;
+}
+.toggle-label input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.toggle-label input[type="checkbox"] + .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #d9534f;
+  transition: background 150ms linear;
+}
+.toggle-label input[type="checkbox"]:checked + .back {
+  background: #00a651; /*green*/
+}
+
+.toggle-label input[type="checkbox"] + .back .toggle {
+  display: block;
+  position: absolute;
+  content: " ";
+  background: #fff;
+  width: 50%;
+  height: 100%;
+  transition: margin 150ms linear;
+  border: 1px solid #808080;
+  border-radius: 0;
+}
+.toggle-label input[type="checkbox"]:checked + .back .toggle {
+  margin-left: 74px;
+}
+.toggle-label .label {
+  display: block;
+  position: absolute;
+  width: 50%;
+  color: #ddd;
+  line-height: 30px;
+  text-align: center;
+  font-size: 1.4em;
+}
+.toggle-label .label.on {
+  left: 0px;
+}
+.toggle-label .label.off {
+  right: 0px;
+}
+
+.toggle-label input[type="checkbox"]:checked + .back .label.on {
+  color: #fff;
+}
+.toggle-label input[type="checkbox"] + .back .label.off {
+  color: #fff;
+}
+.toggle-label input[type="checkbox"]:checked + .back .label.off {
+  color: #ddd;
+}
+
+.filters .filter-by {
+  width: 40%;
+  padding: 8px;
+}
+
+.filters .order-by {
+  width: 40%;
+  padding: 8px;
+}
+.filters select {
+  margin-right: 10px;
+}
+
+.range-filter {
+  padding-top: 1px;
+}
+
+.actions a:nth-of-type(1) {
+  margin-right: 20px;
+}
+.playermodal.panel-heading {
+  padding-bottom: 0px;
+}
+.playermodal.panel-heading .panel-title {
+  width: 75%;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn-create {
+  background: #00a651;
+  border: 1px solid #00a651;
+}
